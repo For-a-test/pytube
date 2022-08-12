@@ -7,8 +7,13 @@ from pytube import YouTube, itags
 def get_streams(
     YouTube_URL: str
 ) -> List:
-    """
-    YouTube_URL : Video link from YouTube
+    """Get streams details of a YouTube video
+
+    Parameters:
+        YouTube_URL (``str``):
+            URL of a YouTube video.
+
+    Usage:
         from pytube import get_streams
         streams = get_streams(yt_url)
     """
