@@ -17,9 +17,9 @@ def get_streams(
         from pytube import get_streams
         streams = get_streams(yt_url)
     """
-    YouTube = YouTube(YouTube_URL)
-    streams = YouTube.streams
-    qualities = YouTube.vid_info['streamingData']
+    youtube = YouTube(YouTube_URL)
+    streams = youtube.streams
+    qualities = youtube.vid_info['streamingData']
     dash = qualities['adaptiveFormats']
     progressive = qualities['formats']
     streamList = []
